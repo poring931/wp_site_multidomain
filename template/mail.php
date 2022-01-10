@@ -51,10 +51,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 			];
 
 			file_get_contents("https://api.telegram.org/bot$token/sendMessage?" . strip_tags(http_build_query($data)) );
-			$token = "2063057290:1668788134:AAFQOSMBaQgvNfpoHM1JxVmjCJJOuDC1gXQ";
+			$token = ":x";
 			$data = [
 				'text' => $message__telegram,
-				'chat_id' => '313875470'
+				'chat_id' => ''
 			];
 
 			file_get_contents("https://api.telegram.org/bot$token/sendMessage?" . strip_tags(http_build_query($data)) );
