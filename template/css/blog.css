@@ -1,0 +1,120 @@
+.blog__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.blog_item {
+    border: 3px solid #C4C4C4;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.blog_item_img {
+    margin: -3px;
+    border: 3px solid #C4C4C4;
+    border-radius: 15px;
+    height: 273px;
+    background-position: center !important;
+    background-size: 100% !important;
+    transition: 0.5s ease;
+    flex-shrink: 0;
+}
+
+.blog_item:hover .blog_item_img {
+    background-size: 110% !important;
+
+}
+
+.blog_item__content {
+    padding: 23px 20px 20px;
+    height: 100%;
+    z-index: 2;
+}
+
+.blog_item_name {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    display: flex;
+    color: #000000;
+}
+
+.blog_item_preview {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 130%;
+    margin-bottom: 25px;
+    color: #000000;
+    min-height: 38px;
+}
+
+.blog_item .abs_href {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.blog__list {
+    margin-bottom: 40px;
+}
+
+.pagination {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    gap: 8px;
+}
+
+.prev.page-numbers {
+    margin-right: 24px;
+}
+
+.next.page-numbers {
+    margin-left: 24px;
+}
+
+a.page-numbers, span.page-numbers.current {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    color: #C4C4C4;
+    border: 2px solid #C4C4C4;
+    border-radius: 8px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s linear;
+}
+
+a.page-numbers:hover {
+    filter: invert(1);
+    color: #C4C4C4 !important
+}
+
+span.page-numbers.current {
+    background: #C4C4C4;
+    color: #FFFFFF;
+}
+
+@media (max-width:560px) {
+    .blog__list {
+        grid-template-columns: 1fr;
+    }
+}
