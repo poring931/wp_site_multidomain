@@ -44,10 +44,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
 
-			$token = "2063057290:AAFoxmvnV4KIErljIgkqIROyAv0bUrldlhw";
+			$token = "";
 			$data = [
 				'text' => $message__telegram,
-				'chat_id' => '345604076'
+				'chat_id' => ''
 			];
 
 			file_get_contents("https://api.telegram.org/bot$token/sendMessage?" . strip_tags(http_build_query($data)) );
